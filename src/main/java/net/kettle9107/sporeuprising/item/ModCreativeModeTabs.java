@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.sporeuprising.spore_uprising_items"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MINIATUREBLACKHOLE);
+                        output.accept(ModItems.MEATYCARROTSTEW);
                     })).build());
 
 //    public static final Supplier<CreativeModeTab> LEARNING_BLOCKS_TAB = CREATIVE_MODE_TAB.register("learning_blocks_tab",

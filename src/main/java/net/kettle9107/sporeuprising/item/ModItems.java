@@ -12,6 +12,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> MINIATUREBLACKHOLE = ITEMS.register("miniature_black_hole",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MEATYCARROTSTEW = ITEMS.register("meaty_carrot_stew",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.MEATYCARROTSTEW)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
