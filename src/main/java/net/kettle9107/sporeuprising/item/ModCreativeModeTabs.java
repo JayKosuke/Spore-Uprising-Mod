@@ -19,17 +19,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.sporeuprising.spore_uprising_items"))
                     .displayItems(((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MINIATUREBLACKHOLE);
-                        output.accept(ModItems.MEATYCARROTSTEW);
+                        output.accept(ModItems.MYCELIUMCARROTSTEW);
+                        output.accept(ModItems.MYCELIUMCARROT);
                     })).build());
-
-//    public static final Supplier<CreativeModeTab> LEARNING_BLOCKS_TAB = CREATIVE_MODE_TAB.register("learning_blocks_tab",
-//            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.LEARNING_BLOCK.get()))
-//                    .withTabsBefore(ResourceLocation.fromNamespaceAndPath(LearningMod.MODID, "learning_items_tab"))
-//                    .title(Component.translatable("creativetab.learningmod.learning_blocks"))
-//                    .displayItems(((itemDisplayParameters, output) -> {
-//                        output.accept(ModBlocks.LEARNING_BLOCK);
-//                        output.accept(ModBlocks.LEARNING_ORE);
-//                    })).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);

@@ -1,5 +1,6 @@
 package net.kettle9107.sporeuprising;
 
+import net.kettle9107.sporeuprising.block.ModBlocks;
 import net.kettle9107.sporeuprising.item.ModCreativeModeTabs;
 import net.kettle9107.sporeuprising.item.ModItems;
 import org.slf4j.Logger;
@@ -41,6 +42,8 @@ public class SporeUprising {
 
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

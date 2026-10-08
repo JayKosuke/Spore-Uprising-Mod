@@ -6,5 +6,6 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Items;
 
 public class ModFoodProperties {
-    public static final FoodProperties MEATYCARROTSTEW = new FoodProperties.Builder().nutrition(8).saturationModifier(0.35f).usingConvertsTo(Items.BOWL).effect(() -> new MobEffectInstance(Seffects.MYCELIUM, 200, 0), 0.75F).build();
+    public static final FoodProperties MYCELIUMCARROTSTEW = new FoodProperties.Builder().nutrition(8).saturationModifier(0.85f).usingConvertsTo(Items.BOWL).effect(() -> new MobEffectInstance(Seffects.MYCELIUM, 200, 0), 0.75F).build();
+    public static final FoodProperties MYCELIUMCARROT = new FoodProperties.Builder().nutrition(4).saturationModifier(0.40f).usingConvertsTo(Items.BOWL).effect(() -> new MobEffectInstance(Seffects.MYCELIUM, 200, 0), 0.25F).build();
 }
